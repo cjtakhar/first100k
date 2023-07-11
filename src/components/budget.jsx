@@ -6,6 +6,7 @@ const BudgetForm = () => {
   const [billAmount, setBillAmount] = useState('');
   const [savings, setSavings] = useState(0);
   const [investment, setInvestment] = useState(0);
+  const [extra, setExtra] = useState(0);
 
   const handleBudgetChange = (event) => {
     setBudget(parseFloat(event.target.value));
@@ -17,10 +18,12 @@ const BudgetForm = () => {
 
   const calculateSavingsAndInvestment = () => {
     const remainingBudget = budget - billAmount;
-    const savingsAmount = remainingBudget * (3 / 4);
+    const savingsAmount = remainingBudget * (2 / 4);
     const investmentAmount = remainingBudget * (1 / 4);
+    const extra = remainingBudget * (1 / 4);
     setSavings(savingsAmount);
     setInvestment(investmentAmount);
+    setExtra(extra)
   };
 
   const oneYearSavings = savings * 12;
@@ -51,6 +54,7 @@ const BudgetForm = () => {
 
         <h3>Savings: ${savings}</h3>
         <h3>Investment: ${investment}</h3>
+        <h3>Extra: ${extra}</h3>
       </div>
       <div className="year">
         <h3>Annual Savings: ${oneYearSavings}</h3>
