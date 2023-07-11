@@ -65,3 +65,9 @@
     background-color: black;
     color: #b807f2;
 }
+
+@media (max-width: 768px) {
+    .budget-form {
+        width: 80%;
+    }
+}
