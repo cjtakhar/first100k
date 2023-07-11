@@ -36,6 +36,9 @@ const BudgetForm = () => {
     setInvestment(investmentAmount);
   };
 
+  const oneYearSavings = savings * 12;
+  const oneYearInvestment = investment * 12;
+
   return (
     <div className="budget-container">
       <h2>Budget and Bills</h2>
@@ -61,6 +64,10 @@ const BudgetForm = () => {
 
       <h3>Savings: ${savings}</h3>
       <h3>Investment: ${investment}</h3>
+      </div>
+      <div className="year">
+        <h3>Annual Savings: ${oneYearSavings}</h3>
+        <h3>Annual Investment: ${oneYearInvestment}</h3>
       </div>
     </div>
   );
