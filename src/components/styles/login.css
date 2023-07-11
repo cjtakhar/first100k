@@ -62,3 +62,9 @@
 .form-msg {
     color: #b807f2;
 }
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 50vw;
+    }
+}

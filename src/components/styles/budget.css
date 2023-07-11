@@ -27,6 +27,10 @@
     border: solid 2px #b807f2;
 }
 
+.budget-form input::placeholder {
+    color: #d3dae3;
+}
+
 .bill-btn {
     padding: 0.5rem;
     border: 1px solid #b807f2;

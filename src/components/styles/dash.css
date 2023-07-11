@@ -6,3 +6,22 @@
 h1 {
     color: #b807f2;
 }
+
+.enter {
+    color: #b807f2;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.peek-link {
+    color: #b807f2;
+    text-align: center;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.peek-link:hover {
+    color: #b807f2;
+    text-decoration: none;
+    border: solid 1px;
+}

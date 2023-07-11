@@ -1,5 +1,6 @@
 import './styles/dash.css'
 import Login from './login'
+import { Link } from 'react-router-dom'
 
 const Dash = () => {
     return (
@@ -11,6 +12,11 @@ const Dash = () => {
                 <div className="login">
                     < Login />
                 </div>
+            <div>
+                <Link to="/home" className="peek-link">
+                <h2 className="enter">just a peek.</h2>
+                </Link>
+            </div>
             </div>
         </div>
     )
