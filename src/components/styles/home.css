@@ -1,29 +1,6 @@
 .home-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
-}
-
-.home-content {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px #b807f2;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.content-box {
-    border: solid 1px #b807f2;
-    box-shadow: 0 0 5px #b807f2;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 10px;
-    color: #b807f2;
-    width: 50%;
-    height: 50%;
 }
