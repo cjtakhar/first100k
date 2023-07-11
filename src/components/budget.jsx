@@ -42,7 +42,6 @@ const BudgetForm = () => {
           <input type="number" value={billAmount} onChange={handleBillAmountChange} placeholder="bills" />
         </label>
         <br />
-        <br />
       </form>
 
       <button className="budget-calculate-btn" onClick={calculateSavingsAndInvestment}>
